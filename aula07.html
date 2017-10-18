@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta charset="utf-8">
+	<title>Curso AngularJS</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</head>
+<body ng-controller="aula07Controller" class="form-control">
+    
+    <ul>
+        <li ng-repeat="nome in nomes">{{nome}}</li>
+    </ul>
+    <ul>
+        <li ng-repeat="pessoa in pessoas">{{pessoa.nome}} - {{pessoa.idade}} </li>
+    </ul>
+    
+    <label for="nomepessoa" >Nome:</label>
+    <input type="text" id="nomepessoa">
+        <br/>
+    <label for="idadepessoa">Idade:</label>
+    <input type="number" max="150" min="18" maxlength="3" name="" id="idadepessoa">
+        <br/>
+    <button type="button" ng-click="adcionaPessoa()">Adciona</button>
+    
+    
+    <script src="js/angular/angular.min.js"></script>
+    <script src="js/app.module.js"></script>
+    
+    
+    <script src="js/aula07Controller.js"></script>
+</body>
+</html>
