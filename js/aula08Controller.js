@@ -8,6 +8,8 @@ app.controller("aula08Controller", function ($scope) {
     $scope.salvarPessoa = function(pessoa){
         $scope.pessoas.push(pessoa);
         $scope.pessoa = novaPessoa();
+        
+
     }
 });
     
